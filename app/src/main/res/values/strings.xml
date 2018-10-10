@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ahoy!</string>
+    <string name="button.finish">FINISH</string>
+    <string name="button.next">NEXT</string>
+    <string name="button.skip">SKIP</string>
+    <string name="title_activity_chooseoptions">chooseoptions</string>
+    <string name="title_activity_customerhome">customerhome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_evhome">evhome</string>
+    <string name="title_activity_adminhome">adminhome</string>
+    <string name="title_activity_main_activityqwe">MainActivityqwe</string>
+    <string name="title_activity_maps_marker">Map</string>
+</resources>

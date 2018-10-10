@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codemybrainsout.onboarding.customeroptionspage">
+
+    <Spinner
+        android:id="@+id/chooseslot"
+        android:layout_width="264dp"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"/>
+    <Spinner
+        android:id="@+id/choosestation"
+        android:layout_width="264dp"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="98dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/chooseevstation"
+        android:layout_alignLeft="@+id/choosecharge"
+        android:layout_alignStart="@+id/choosecharge" />
+
+    <TextView
+        android:id="@+id/choosecharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose type of charging:"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="170dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/choosestation"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/chooseevstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose EV Station:"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/choosestation"
+        android:layout_alignStart="@+id/choosestation" />
+
+
+    <Button
+        android:id="@+id/slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:onClick="onSubmit"
+        android:text="CHOOSE SLOT AND BATTERY PERCENTAGE"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/choosecharge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RadioButton
+            android:id="@+id/slowcharging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/choosecharge"
+            android:layout_alignRight="@+id/choosecharge"
+            android:layout_below="@+id/choosecharge"
+            android:layout_marginTop="40dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Slow Charge"
+            android:textColor="#154"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/fastcharging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/slowcharging"
+            android:layout_alignRight="@+id/slowcharging"
+            android:layout_below="@+id/slowcharging"
+            android:layout_marginTop="26dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Fast Charge"
+            android:textColor="#154"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>
+

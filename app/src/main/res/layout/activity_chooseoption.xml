@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_social_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.codemybrainsout.onboarding.chooseoption">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/customer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/custom_progress_orange_header"
+                android:text="CUSTOMER"
+                android:textColor="@color/input_login" />
+
+            <Button
+                android:id="@+id/evstation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/googleColor"
+                android:text="EV STATION"
+                android:textColor="@color/input_login" />
+
+            <Button
+                android:id="@+id/admin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="ADMIN"
+                android:textColor="@color/input_login" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/appimage" />
+
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"
+            android:text="POWERGRID EV APP"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adminmenu1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="adminmenu1" />
+        <item
+            android:id="@+id/nav_adminmenu2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="adminmenu2" />
+        <item
+            android:id="@+id/nav_adminmenu3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="adminmenu3" />
+        <item
+            android:id="@+id/nav_adminmenu4"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="adminmenu4" />
+    </group>
+
+
+
+</menu>
